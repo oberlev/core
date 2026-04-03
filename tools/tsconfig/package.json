@@ -1,0 +1,49 @@
+{
+  "name": "@oberlev/tsconfig",
+  "version": "1.0.0",
+  "description": "TypeScript configs for Oberlev projects",
+  "license": "MIT",
+  "keywords": [
+    "tsconfig",
+    "typescript",
+    "config"
+  ],
+  "author": {
+    "name": "Daniil Oberlev",
+    "url": "https://github.com/oberlev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oberlev/core.git",
+    "directory": "tools/tsconfig"
+  },
+  "homepage": "https://github.com/oberlev/core/tree/main/tools/tsconfig",
+  "bugs": {
+    "url": "https://github.com/oberlev/core/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "tsconfig.base.json",
+    "tsconfig.bundler.json",
+    "tsconfig.node.json",
+    "tsconfig.react.json"
+  ],
+  "exports": {
+    ".": "./tsconfig.base.json",
+    "./base": "./tsconfig.base.json",
+    "./bundler": "./tsconfig.bundler.json",
+    "./node": "./tsconfig.node.json",
+    "./react": "./tsconfig.react.json"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.0"
+  },
+  "scripts": {
+    "check": "tsc --noEmit -p tsconfig.base.json"
+  }
+}

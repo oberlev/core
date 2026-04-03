@@ -1,0 +1,18 @@
+pre-commit:
+  parallel: true
+  commands:
+    format:
+      glob: "*.{ts,tsx,js,jsx,json,md,yml,yaml,css,scss}"
+      run: pnpm format --write {staged_files}
+      stage_fixed: true
+
+    # lint:
+    #   glob: "*.{ts,tsx,js,jsx}"
+    #   run: pnpm lint --fix {staged_files}
+    #   stage_fixed: true
+
+# pre-push:
+#   parallel: true
+#   commands:
+#     validate:
+#       run: pnpm validate

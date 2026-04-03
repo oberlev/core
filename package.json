@@ -1,0 +1,19 @@
+{
+  "name": "@oberlev/core",
+  "private": true,
+  "description": "Oberlev monorepo",
+  "type": "module",
+  "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "eslint . --max-warnings=0",
+    "lint:fix": "eslint . --fix",
+    "validate": "pnpm run format:check && pnpm run lint && pnpm run type-check"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.30.0",
+    "lefthook": "^2.1.4",
+    "prettier": "^3.8.1",
+    "typescript": "^5.9.3"
+  }
+}
