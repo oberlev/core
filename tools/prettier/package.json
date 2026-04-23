@@ -55,6 +55,11 @@
   "dependencies": {
     "prettier": "^3.8.1"
   },
+  "devDependencies": {
+    "@oberlev/tsconfig": "^1.0.1",
+    "typescript": "^5.9.3",
+    "tsdown": "^0.6.1"
+  },
   "lint-staged": {
     "*.{js,ts}": [
       "eslint --fix",
