@@ -2,7 +2,7 @@ pre-commit:
   parallel: true
   commands:
     format:
-      glob: "*.{ts,tsx,js,jsx,json,md,yml,yaml,css,scss}"
+      glob: '*.{ts,tsx,js,jsx,json,md,yml,yaml,css,scss}'
       run: pnpm format --write {staged_files}
       stage_fixed: true
 

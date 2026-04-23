@@ -1,5 +1,5 @@
 ---
-"@oberlev/tsconfig": patch
+'@oberlev/tsconfig': patch
 ---
 
 tsconfig
