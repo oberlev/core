@@ -1,5 +1,0 @@
----
-'@oberlev/tsconfig': patch
----
-
-tsconfig
