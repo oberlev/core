@@ -15,6 +15,7 @@
     "@changesets/cli": "^2.30.0",
     "lefthook": "^2.1.4",
     "prettier": "^3.8.1",
+    "tsdown": "^0.21.10",
     "typescript": "^5.9.3"
   }
 }
