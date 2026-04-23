@@ -37,8 +37,8 @@ importers:
         version: 3.8.1
     devDependencies:
       '@oberlev/tsconfig':
-        specifier: ^1.0.1
-        version: 1.0.1(typescript@5.9.3)
+        specifier: workspace:*
+        version: link:../tsconfig
       typescript:
         specifier: ^5.9.3
         version: 5.9.3
@@ -196,11 +196,6 @@ packages:
     resolution: {integrity: sha512-aqgzzUE/odwaGCfdhOHaRCLJByeorNlK3+ZHoB+LnG6OcYLlg3GAENfcR2NgEX5j3s7FfWARYGOovIgSV1HUYQ==}
     peerDependencies:
       prettier: ^3.8.1
-
-  '@oberlev/tsconfig@1.0.1':
-    resolution: {integrity: sha512-gtOgqsiSJcSEHGlJ9Hi9biop3KcStGeac1hXR6OPX+JP4XfSX+iVNzbCzO/nTARn0JlTcE7CcDy3DNkQ/BJjvA==}
-    peerDependencies:
-      typescript: ^5.0.0
 
   '@oxc-project/types@0.127.0':
     resolution: {integrity: sha512-aIYXQBo4lCbO4z0R3FHeucQHpF46l2LbMdxRvqvuRuW2OxdnSkcng5B8+K12spgLDj93rtN3+J2Vac/TIO+ciQ==}
@@ -1094,10 +1089,6 @@ snapshots:
   '@oberlev/prettier@1.0.1(prettier@3.8.1)':
     dependencies:
       prettier: 3.8.1
-
-  '@oberlev/tsconfig@1.0.1(typescript@5.9.3)':
-    dependencies:
-      typescript: 5.9.3
 
   '@oxc-project/types@0.127.0': {}
 
